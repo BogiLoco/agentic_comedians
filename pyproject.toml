@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "crew_jokers"
+version = "0.1.0"
+description = "Joking crew"
+authors = ["BogiLoco"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = {extras = ["tools"], version = "^0.27.0"}
+
+[tool.poetry.scripts]
+crew_jokers = "crew_jokers.main:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
